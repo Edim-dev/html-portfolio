@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23d10ae737.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div>
+            <nav>
+                <img src="./images/edim e logo.png" alt="edim logo" class="logo">
+
+                <ul id="nav-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+
+            <div class="introduction">
+                <h1>Hi, I'm <span>Edim...</span></h1>
+                <p>Frontend Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-------------- about ---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                     <img src="./images/edimm.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Frontend Web Developer with over 2 years of experience crafting engaging and responsive user interfaces. Skilled in React, Tailwind CSS... I bring ideas to life with clean, modern code. Passionate about user experience, design, and staying on the cutting edge of tech, I thrive on turning complex concepts into intuitive web experiences. Beyond coding, I enjoy taking on new challenges, sharing my learning journey, and connecting with other tech enthusiasts. Let's build something awesome together!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Website Development</li>
+                            <li><span>Web App Development</span><br>Building Web Applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - current</span><br>UI/UX Design</li>
+                            <li><span>2023 - current</span><br>Web app Development</li>
+                            <li><span>current</span><br>Intern at App Brewery</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>UI/UX Design training at App Brewery</li>
+                            <li><span>2023</span><br>Web Development training at App Brewery</li>
+                            <li><span>2024</span><br>B.Tech in Urban Planning from FUTA, NIgeria</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------- Services ------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting visually stunning and user-friendly designs that captivate audiences and elevate your brand's online presence.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Development</h2>
+                    <p>Building responsive, high-performance websites with clean code and seamless functionality tailored to your unique needs.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web App Development</h2>
+                    <p>Developing dynamic and scalable web applications that deliver interactive user experiences and drive business growth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------portfolio------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/image 1.png">
+                    <div class="layer">
+                        <h3>Web3 App</h3>
+                        <p>This website gives access to bidding and owning NFT collections.
+                        </p>
+                        <a href="https://html-metalink.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/image 2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>This app connects you to the talented people around the world.
+                        Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/image 3.png">
+                    <div class="layer">
+                        <h3>Onlne Shopping App</h3>
+                        <p>This app connects you to the talented people around the world.
+                        Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------contact--------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i></i>connectwithedim@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+234 815 820 5826</p>
+                    <div class="social-icons">
+                        <a href="http://wa.me/2348158205826"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://twitter.com/hay_whigh"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/edim_dev"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/edim-dev"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Edim_Dev</p>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
